@@ -13,3 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+youUrl = 'http://localhost:3000/toys'
+
+fetch(youUrl)
+.then(res =>res.json())
+.then(toyArray => toyList(toyArray))
+
+function toyList(toyInput) {
+  
+}
